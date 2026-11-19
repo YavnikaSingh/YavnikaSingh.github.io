@@ -4,38 +4,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yavnika Singh | Geopolitical Research</title>
-<meta name="description" content="Independent research and commentary on geopolitics, international relations, foreign policy and strategic affairs.">
+<meta name="description" content="Polity & Praxis is an independent journal exploring geopolitics, foreign policy, international security and the international order.">
+<title>Polity & Praxis | Ideas, Interests & the International Order</title>
 
 <style>
 :root {
-  --navy: #172b43;
-  --ink: #202b36;
-  --muted: #687583;
-  --paper: #faf9f6;
-  --line: #e5e2db;
-  --accent: #a66d43;
+  --navy: #1c3047;
+  --paper: #f6f3ec;
+  --white: #fffefa;
+  --bronze: #99704f;
+  --slate: #657080;
+  --line: #ded8cc;
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; scroll-behavior: smooth; }
 
 body {
   margin: 0;
   background: var(--paper);
-  color: var(--ink);
+  color: var(--navy);
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.7;
 }
 
 .container {
-  max-width: 1080px;
+  width: min(1080px, 90%);
   margin: auto;
-  padding: 0 28px;
 }
 
 header {
   border-bottom: 1px solid var(--line);
-  padding: 24px 0;
+  padding: 22px 0;
+  background: var(--paper);
 }
 
 nav {
@@ -45,131 +45,131 @@ nav {
   gap: 20px;
 }
 
-.brand {
-  color: var(--navy);
-  font-size: 21px;
+.logo {
+  font-size: 22px;
   font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--navy);
   text-decoration: none;
 }
 
-nav a {
-  color: var(--muted);
+.navlinks a {
+  color: var(--slate);
   text-decoration: none;
-  margin-left: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
+  font: 12px Arial, sans-serif;
+  letter-spacing: 1px;
+  margin-left: 22px;
 }
 
-nav a:hover { color: var(--accent); }
+.navlinks a:hover { color: var(--bronze); }
 
 .hero {
-  padding: 105px 0 90px;
+  padding: 110px 0 95px;
   border-bottom: 1px solid var(--line);
 }
 
 .eyebrow {
-  color: var(--accent);
-  text-transform: uppercase;
+  color: var(--bronze);
+  font: 11px Arial, sans-serif;
   letter-spacing: 3px;
-  font: 12px Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 h1 {
-  color: var(--navy);
-  font-size: clamp(42px, 7vw, 72px);
+  font-size: clamp(45px, 7vw, 76px);
   line-height: 1.08;
-  max-width: 800px;
-  margin: 25px 0;
   font-weight: normal;
+  max-width: 850px;
+  margin: 25px 0;
 }
 
 .hero p {
-  color: var(--muted);
   font-size: 19px;
+  color: var(--slate);
   max-width: 650px;
 }
 
 .button {
   display: inline-block;
-  margin-top: 22px;
-  padding: 12px 23px;
   background: var(--navy);
   color: white;
+  padding: 13px 23px;
+  margin-top: 20px;
   text-decoration: none;
-  font: 13px Arial, sans-serif;
+  font: 12px Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
-.button:hover { background: var(--accent); }
+.button:hover { background: var(--bronze); }
 
-section { padding: 65px 0; }
+section { padding: 75px 0; }
 
 .section-title {
-  font-size: 31px;
-  color: var(--navy);
+  font-size: 36px;
   font-weight: normal;
-  margin: 0 0 10px;
+  margin: 10px 0;
 }
 
-.section-intro {
-  color: var(--muted);
+.intro {
+  color: var(--slate);
   margin-bottom: 35px;
 }
 
-.articles {
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
 
-.article {
+.card {
+  background: var(--white);
   border: 1px solid var(--line);
   padding: 28px;
-  background: white;
 }
 
 .category {
   font: 11px Arial, sans-serif;
-  text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--accent);
+  color: var(--bronze);
+  text-transform: uppercase;
 }
 
-.article h3 {
-  color: var(--navy);
+.card h3 {
   font-size: 23px;
   line-height: 1.35;
   font-weight: normal;
 }
 
-.article p { color: var(--muted); }
+.card p { color: var(--slate); }
 
-.article a, .project-link {
-  color: var(--accent);
-  text-decoration: none;
-  font: 13px Arial, sans-serif;
+.about-section {
+  background: #ebe6dc;
 }
 
-.about {
-  background: #f0eee8;
-}
-
-.about p {
+.about-section p {
   max-width: 760px;
-  color: #4f5a65;
+  color: #505d6a;
   font-size: 17px;
 }
 
-.project-box {
-  padding: 30px;
+.project {
+  background: var(--white);
   border: 1px solid var(--line);
-  background: white;
+  padding: 30px;
+}
+
+.project a {
+  color: var(--bronze);
+  text-decoration: none;
+  font: 12px Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 footer {
   background: var(--navy);
-  color: #e8edf2;
-  padding: 35px 0;
-  font: 13px Arial, sans-serif;
+  color: #e8e9e8;
+  padding: 40px 0;
+  font: 12px Arial, sans-serif;
 }
 
 footer a {
@@ -179,9 +179,10 @@ footer a {
 
 @media(max-width:650px) {
   nav { align-items: flex-start; flex-direction: column; }
-  nav a { margin: 0 14px 0 0; }
+  .navlinks { display: flex; flex-wrap: wrap; gap: 12px; }
+  .navlinks a { margin: 0; }
   .hero { padding: 70px 0; }
-  .articles { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -189,132 +190,178 @@ footer a {
 <body>
 
 <header>
-  <div class="container">
-    <nav>
-      <a class="brand" href="#">YAVNIKA SINGH</a>
-      <div>
-        <a href="#writing">WRITING</a>
-        <a href="#research">RESEARCH</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT</a>
-      </div>
-    </nav>
-  </div>
+<div class="container">
+<nav>
+<a class="logo" href="#">POLITY & PRAXIS</a>
+<div class="navlinks">
+<a href="#essays">ESSAYS</a>
+<a href="#analysis">ANALYSIS</a>
+<a href="#research">RESEARCH</a>
+<a href="#about">ABOUT</a>
+<a href="#contact">CONTACT</a>
+</div>
+</nav>
+</div>
 </header>
 
 <main>
 
 <div class="container">
-  <section class="hero">
-    <div class="eyebrow">Independent Research & Commentary</div>
-    <h1>Understanding a world in constant change.</h1>
-    <p>
-      Exploring geopolitics, international relations,
-      foreign policy and strategic affairs through
-      independent research, analysis and commentary.
-    </p>
-    <a class="button" href="#writing">EXPLORE MY WRITING →</a>
-  </section>
+<section class="hero">
+<div class="eyebrow">An Independent Journal of Global Affairs</div>
+
+<h1>Ideas, interests and the international order.</h1>
+
+<p>
+An independent space for examining geopolitics,
+foreign policy, international security and the
+forces shaping contemporary global affairs.
+</p>
+
+<a class="button" href="#essays">EXPLORE THE JOURNAL →</a>
+</section>
 </div>
 
 <div class="container">
-  <section id="writing">
-    <div class="eyebrow">The Journal</div>
-    <h2 class="section-title">Writing & Commentary</h2>
-    <p class="section-intro">
-      Opinion pieces and perspectives on contemporary global affairs.
-    </p>
+<section id="essays">
+<div class="eyebrow">01 / Commentary</div>
+<h2 class="section-title">Essays & Op-Eds</h2>
+<p class="intro">
+Independent perspectives on contemporary political
+developments and international affairs.
+</p>
 
-    <div class="articles">
-      <article class="article">
-        <div class="category">Foreign Policy</div>
-        <h3>India's Strategic Balancing Act Between Russia and the West</h3>
-        <p>A look at India's diplomatic choices in an increasingly polarised international order.</p>
-        <span class="category">Draft topic · Article forthcoming</span>
-      </article>
+<div class="grid">
+<article class="card">
+<div class="category">Foreign Policy</div>
+<h3>India's Strategic Balancing Act Between Russia and the West</h3>
+<p>
+An exploration of India's diplomatic choices
+in an increasingly polarised international order.
+</p>
+<div class="category">Article forthcoming</div>
+</article>
 
-      <article class="article">
-        <div class="category">Geoeconomics</div>
-        <h3>The Red Sea Crisis and India's Economic Security</h3>
-        <p>Examining the connection between maritime disruption, global trade and India's strategic interests.</p>
-        <span class="category">Draft topic · Article forthcoming</span>
-      </article>
+<article class="card">
+<div class="category">Geoeconomics</div>
+<h3>The Red Sea Crisis and India's Economic Security</h3>
+<p>
+Examining maritime disruption, global trade
+and India's strategic interests.
+</p>
+<div class="category">Article forthcoming</div>
+</article>
+</div>
+</section>
 
-      <article class="article">
-        <div class="category">Regional Security</div>
-        <h3>China's Growing Influence in South Asia</h3>
-        <p>Assessing regional power dynamics and their implications for India's neighbourhood policy.</p>
-        <span class="category">Draft topic · Article forthcoming</span>
-      </article>
+<section id="analysis">
+<div class="eyebrow">02 / Global Perspectives</div>
+<h2 class="section-title">Geopolitical Analysis</h2>
+<p class="intro">
+Exploring regional power dynamics, strategic competition
+and emerging international developments.
+</p>
 
-      <article class="article">
-        <div class="category">International Relations</div>
-        <h3>The Changing Global Order and the Global South</h3>
-        <p>Exploring the shifting balance of influence in contemporary international affairs.</p>
-        <span class="category">Draft topic · Article forthcoming</span>
-      </article>
-    </div>
-  </section>
+<div class="grid">
+<article class="card">
+<div class="category">Regional Security</div>
+<h3>China's Expanding Influence in South Asia</h3>
+<p>
+Examining regional power dynamics and their
+implications for India's neighbourhood.
+</p>
+<div class="category">Analysis forthcoming</div>
+</article>
+
+<article class="card">
+<div class="category">International Order</div>
+<h3>The Changing Global Order and the Global South</h3>
+<p>
+Understanding emerging power centres and
+the evolving architecture of global governance.
+</p>
+<div class="category">Analysis forthcoming</div>
+</article>
+</div>
+</section>
 </div>
 
-<div class="about">
-  <div class="container">
-    <section id="about">
-      <div class="eyebrow">About the Author</div>
-      <h2 class="section-title">Yavnika Singh</h2>
-      <p>
-        I am an independent researcher interested in geopolitics,
-        international relations, foreign policy and strategic affairs.
-        My work explores geopolitical developments, regional security,
-        political risk and the intersection of economics and international politics.
-      </p>
-      <p>
-        This website serves as a space for my independent writing,
-        research and analytical work.
-      </p>
-    </section>
-  </div>
+<div class="about-section">
+<div class="container">
+<section id="about">
+<div class="eyebrow">03 / The Journal</div>
+<h2 class="section-title">About Polity & Praxis</h2>
+<p>
+Polity & Praxis is an independent journal founded
+and edited by Yavnika Singh. It is a platform for
+independent writing, research and commentary on
+international relations, geopolitics, foreign policy
+and strategic affairs.
+</p>
+<p>
+The journal seeks to examine the ideas, interests
+and political forces shaping the international order,
+with an emphasis on informed analysis, evidence
+and diverse perspectives.
+</p>
+<h3>Founder & Editor</h3>
+<p>
+<strong>Yavnika Singh</strong><br>
+Independent researcher and writer focusing on
+international relations, geopolitics and strategic affairs.
+</p>
+</section>
+</div>
 </div>
 
 <div class="container">
-  <section id="research">
-    <div class="eyebrow">Research & Projects</div>
-    <h2 class="section-title">Beyond the written word</h2>
-    <div class="project-box">
-      <h3>India Risk Intelligence Dashboard</h3>
-      <p>
-        An independent project tracking geopolitical developments,
-        strategic risks and indicators affecting India's external environment.
-      </p>
-      <a class="project-link"
-         href="https://india-risk-intelligence-dashboard-xnir8kwrbnyjuw8um3pjvp.streamlit.app/"
-         target="_blank" rel="noopener">
-        EXPLORE THE PROJECT →
-      </a>
-    </div>
-  </section>
-</div>
+<section id="research">
+<div class="eyebrow">04 / Research & Projects</div>
+<h2 class="section-title">Research Beyond Commentary</h2>
+<p class="intro">
+Independent research and projects exploring geopolitical risks.
+</p>
 
-<div class="container">
-  <section id="contact">
-    <div class="eyebrow">Get in Touch</div>
-    <h2 class="section-title">Let's connect.</h2>
-    <p class="section-intro">
-      For research collaborations, professional opportunities
-      and discussions on international affairs.
-    </p>
-    <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-      CONNECT ON LINKEDIN →
-    </a>
-  </section>
+<div class="project">
+<div class="category">Research Project</div>
+<h3>India Risk Intelligence Dashboard</h3>
+<p>
+An independent project monitoring geopolitical
+developments, strategic risks and indicators
+affecting India's external environment.
+</p>
+<a href="https://india-risk-intelligence-dashboard-xnir8kwrbnyjuw8um3pjvp.streamlit.app/"
+target="_blank" rel="noopener">
+EXPLORE THE DASHBOARD →
+</a>
+</div>
+</section>
+
+<section id="contact">
+<div class="eyebrow">05 / Correspondence</div>
+<h2 class="section-title">Contact the Editor</h2>
+<p class="intro">
+For research collaborations, contributions
+and professional correspondence.
+</p>
+<p>
+Polity & Praxis<br>
+Founded and edited by Yavnika Singh
+</p>
+<a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+FIND US ON LINKEDIN →
+</a>
+</section>
 </div>
 
 </main>
 
 <footer>
-  <div class="container">
-    © 2026 Yavnika Singh · Independent Research & Commentary
-  </div>
+<div class="container">
+<strong>POLITY & PRAXIS</strong>
+<p>Ideas, interests and the international order.</p>
+<p>© 2026 Polity & Praxis. Founded and edited by Yavnika Singh.</p>
+</div>
 </footer>
 
 </body>
